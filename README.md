@@ -12,6 +12,7 @@ It combines **Multi-Scale Set Abstraction (MSA)** and **Channel & Spatial Attent
 ## 🗃 Dataset Format
 
 Your dataset should follow this structure:
+```
 data_root/
 ├── 1/
 │ ├── 1_1.xyz
@@ -19,6 +20,7 @@ data_root/
 ├── 2/
 │ ├── 2_1.xyz
 ...
+```
 - Each `.xyz` file contains 3D points in text format.
 
 ## 🚀 Getting Started
@@ -29,7 +31,6 @@ pip install -r requirements.txt
 ```
 
 Set your dataset path in `Config.data_root` in `train.py` and run training:
-bash
 ```
 python train.py
 ```
